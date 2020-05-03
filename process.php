@@ -8,7 +8,7 @@
     $message = $_POST['message'];
     
     //send email
-    mail($admin_email, "New Form Submission", $message . ' - ' . $phone, "From:" . $email);
+    mail($admin_email, "New Form Submission", $message, "From:" . $email);
     
-    header('Location: https://mstenflo.github.io/stenflo');
+    // header('Location: https://mstenflo.github.io/stenflo');
   }
